@@ -1,0 +1,126 @@
+/* Default gXPlanet CSS File, made by neb at gigax dot org */
+
+body {
+	font-family: Arial, Lucida Grande, sans-serif;
+	margin: 0px;
+	color: black;
+	background-color: #d0d0d0;
+}
+
+a img {
+	border: none;
+}
+
+.header {
+	border-bottom: 5px solid #81bbf2;
+	background-color: #ffffff;
+	float: left;
+	height: 110px;
+	overflow: visible;
+	width: 100%;
+	text-align: left;
+	padding: 0%;
+}
+
+.logo {
+	float: left;
+	clear: both;
+}
+
+.slogan {
+	width: 60%;
+	text-align: center;
+}
+
+.suscriptors {
+	background-color: #ffffff;
+        float: right;
+        margin: 0.0cm;
+	border-bottom: 5px solid #81bbf2;
+        width: 19%;
+        text-align: left;
+        padding: 1%;
+        /*clear: right;*/
+        font-size: smaller;
+}
+
+.lastentry {
+        font-size: 10px;
+	font-weight: bold;
+}
+
+.note {
+	border: 2px solid #fa8d08; 
+	background-color: #ffa434; 
+	padding: 3%;
+}
+.content-box {
+	float: left;
+	width: 78%;
+	padding: 0%;
+	padding-top: 2%;
+}
+
+.content a {
+	color: #180ea2;
+	text-decoration: none;
+}
+
+.content a:hover {
+	color: #180ea2;
+	text-decoration: underline;
+}
+
+.content a:visited {
+	color: #5a3696;
+}
+
+.content {
+	font-weight: normal;
+	font-size: 12px;
+	text-align: justify;
+	margin-left: 0cm;
+	margin-right: 0cm;
+	margin-top: 0cm;
+	margin-bottom: 0.4cm;
+	padding: 3%;
+	clear: both;
+}
+
+.face {
+	text-align: center;
+	vertical-align: top;
+}
+
+.face a {
+	font-weight: bold;
+}
+
+.face a:hover {
+	text-decoration: none;
+}
+
+.face a:visited {
+	color: #180ea2;
+	text-decoration: none;
+}
+
+.post {
+	background-color: #ffffff;
+	border-top: 5px solid #17c805;
+	border-bottom: 5px solid #17c805;
+}
+
+.footer {
+	text-align: center;
+	width: 100%;
+	float: center;
+	font-weight: normal;
+	font-size: 10px;
+	background-color: #ffffff;
+	border-top: 1px solid #81bbf2;
+	border-bottom: 1px solid #81bbf2;
+	margin: 0.6em 0em 1em 0em;
+	padding: 0.4em 0em 1.2em 0em;
+	clear: both;
+}

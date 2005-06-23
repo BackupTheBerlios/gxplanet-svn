@@ -1,0 +1,11 @@
+#
+# gXPlanet Readme
+#
+GiGAX Planet it's a feeds agregator made in PHP, simple, easy to use and configure.
+GiGAX Planet uses a modified version of the lastRSS class <http://lastrss.webdot.cz/> by Vojtech Semecky to work with the RSS feeds and the 2RSS.com <http://www.2rss.com> service to convert Atom feeds to RSS, thank you guys :).
+
+If you want to install GiGAX Planet read the INSTALL file.
+
+GiGAX Planet was made by Juan Felipe Alvarez Saldarriaga <neb@gigax.org> 
+
+This code is protected by the GNU/GPL license.

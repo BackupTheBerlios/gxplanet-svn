@@ -1,0 +1,31 @@
+#
+# gXPlanet Setup
+#
+First, you will need the latest PHP4 if you want to install this, with iconv module compiled, and, thats all :).
+
+#
+# Install
+#
+Copy this package into your folder, it should be public_html.
+
+First, look at the examples/ folder, you will find some examples to put work gXPlanet, in every folder you can see a "index.php" file, copy on of them into your root folder, look this example:
+
+	$ cd examples/default/
+	$ cp index.php ../../
+
+You can make your own "index.php" file, try to read the others to make your own for your site.
+
+Now put the right permissions to your cache/ folder:
+
+	$ chmod 777 cache/
+
+We need this to write the RSS files.
+
+#
+# Configure
+#
+Go to include/ folder, then edit config.php to put work right gXPlanet, then edit people.php if you want add more people to our planet.
+
+If you copy the index.php file from the examples/default/ folder, choose the right stylesheet from it, in the config.php do this, choose a "style", per default, "default".
+
+If you want generate your own style, copy de default/ folder to styles/my_style, edit the index.php and thats all for this time i guess :).
