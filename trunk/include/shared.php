@@ -15,7 +15,7 @@ include_once("config.php");
 # This code is protected by the GNU/GPL license.
 #
 define("VERSION", "0.1");
-define("GXPLANET", "http://planet.gigax.org/");
+define("GXPLANET", "http://gxplanet.berlios.de/");
 
 $adminmail = ADMINMAIL;
 
