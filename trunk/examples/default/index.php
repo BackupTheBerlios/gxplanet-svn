@@ -36,7 +36,7 @@ include_once("include/people.php");
 	#
 	foreach($feeds as $nick => $url) {
 		$burl = $blog[$nick];
-		ShowSuscriptors($nick, $burl);
+		ShowPeople($nick, $url, $burl, $images);
 		LastEntry($nick, $url, $burl);
 	}
 	echo("<br /><br />");
@@ -77,7 +77,7 @@ include_once("include/people.php");
 			ShowFaces($nick, $pic, $burl, $faces);
 			echo("</td>\n");
 			echo("<td class=\"post\">\n");
-			ShowFeeds($nick, $url, $burl);
+			ShowFeeds($nick, $url, $burl, $images);
 			echo("</td>\n");
 			echo("</tr>\n");
 		}	
