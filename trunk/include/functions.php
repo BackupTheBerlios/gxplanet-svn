@@ -25,7 +25,7 @@ function ShowFeeds($nick, $url, $burl) {
 
         if($rs = $rss->get($url)) {
                 foreach($rs['items'] as $item) {
-                        echo("<a href=\"$burl\" title=\"$nick\"><b>$nick</b></a> on <b>$item[pubDate]</b> say:\n");
+                        echo("<a href=\"$burl\" title=\"$nick's Blog\"><b>$nick</b></a> on <b>$item[pubDate]</b> say:\n");
                         echo("<br /><br />\n");
                         echo("<li><a href=\"$item[link]\" title=\"$item[title]\">$item[title]</a></li>\n");
                         echo("<br />\n");
@@ -52,11 +52,11 @@ function ShowFeeds($nick, $url, $burl) {
 #
 function ShowFaces($nick, $pic, $burl, $faces) {
         if ($pic == "") {
-                echo("<a name=\"$nick\" href=\"$burl\" title=\"$nick\"><img src=\"$faces/anonymous.png\" alt=\"$nick\"></a>\n");
+                echo("<a name=\"$nick\" href=\"$burl\" title=\"$nick's Blog\"><img src=\"$faces/anonymous.png\" alt=\"$nick\"></a>\n");
                 echo("<br />");
                 echo("<a href=\"$burl\">$nick</a>");
         } else {
-                echo("<a href=\"$burl\" title=\"$nick\"><img src=\"$pic\" alt=\"$nick\"></a>\n");
+                echo("<a href=\"$burl\" title=\"$nick's Blog\"><img src=\"$pic\" alt=\"$nick\"></a>\n");
                 echo("<br />");
                 echo("<a href=\"$burl\">$nick</a>");
         }
@@ -104,7 +104,7 @@ function Head($styledir) {
 # gXPlanet Footer Function
 #
 function Footer() {
-	echo("Powered By <a href=\"" . GXPLANET . "\" title=\"" . TITLE . " \">gXPlanet</a> " . VERSION ."\n");
+	echo("Powered By <a href=\"" . GXPLANET . "\" title=\"" . VERSION . " \">gXPlanet</a> " . VERSION ."\n");
 }
 
 ?>
