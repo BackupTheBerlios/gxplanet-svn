@@ -26,7 +26,7 @@ $feeds = array(
         "NeoEcoS" => "http://neoecos.f2o.org/data/xml/blog.rss",
         "aCmE-" => "http://gpsis.utp.edu.co/~acme/blog/?feed=rss2",
         "FoxTrot" => "http://www.2rss.com/atom2rss.php?atom=http://foxtrotblog.blogspot.com/atom.xml",
-        "TrivaL" => "http://www.trival.net/?feed=rss2",
+        "TrivaL" => "http://www.trival.net/wp-rss2.php",
 	"JohnnyDC" => "http://www.2rss.com/atom2rss.php?atom=http://johnnydc.blogspot.com/atom.xml"
 );
 

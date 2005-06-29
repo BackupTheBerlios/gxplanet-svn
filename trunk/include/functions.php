@@ -20,12 +20,12 @@ include_once("shared.php");
 #
 # Show the RSS feeds on the gXPlanet Loop.
 #
-function ShowFeeds($nick, $url, $burl) {
+function ShowFeeds($nick, $url, $burl, $images) {
         global $rss;
 
         if($rs = $rss->get($url)) {
                 foreach($rs['items'] as $item) {
-                        echo("<a href=\"$burl\" title=\"$nick's Blog\"><b>$nick</b></a> on <b>$item[pubDate]</b> say:\n");
+			echo("<a href=\"$burl\" title=\"$nick's Blog\"><b>$nick</b></a> <a href=\"$url\" title=\"$nick's Feed\"><img src=\"$images/btn_rss.gif\"></a> on <b>$item[pubDate]</b> say:\n");
                         echo("<br /><br />\n");
                         echo("<li><a href=\"$item[link]\" title=\"$item[title]\">$item[title]</a></li>\n");
                         echo("<br />\n");
@@ -54,11 +54,11 @@ function ShowFaces($nick, $pic, $burl, $faces) {
         if ($pic == "") {
                 echo("<a name=\"$nick\" href=\"$burl\" title=\"$nick's Blog\"><img src=\"$faces/anonymous.png\" alt=\"$nick\"></a>\n");
                 echo("<br />");
-                echo("<a href=\"$burl\">$nick</a>");
+                echo("<a href=\"$burl\" title=\"$nick's Blog\">$nick</a>");
         } else {
                 echo("<a href=\"$burl\" title=\"$nick's Blog\"><img src=\"$pic\" alt=\"$nick\"></a>\n");
                 echo("<br />");
-                echo("<a href=\"$burl\">$nick</a>");
+                echo("<a href=\"$burl\" title=\"$nick's Blog\">$nick</a>");
         }
 }
 
@@ -67,9 +67,10 @@ function ShowFaces($nick, $pic, $burl, $faces) {
 #
 # Wee gonna show the nicks here :D
 #
-function ShowSuscriptors($nick, $burl) {
+function ShowPeople($nick, $url, $burl, $images) {
 	echo("<a href=\"#$nick\" title=\"$nick's Last Post\">$nick</a>\n");
 	echo("<a href=\"$burl\" title=\"$nick's Blog\">(Blog)</a>\n");
+	echo("<a href=\"$url\" title=\"$nick's Feed\"><img src=\"$images/btn_rss.gif\"></a>\n");
 	echo("<br />");
 }
 
