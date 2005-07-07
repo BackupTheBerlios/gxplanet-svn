@@ -20,7 +20,7 @@ include_once("../include/shared.php");
         #
         # gXPlanet Header
         #
-        Head($styledir);
+        Head($styledir, $logo);
 
         ?>
 </div>
