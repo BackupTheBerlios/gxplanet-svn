@@ -25,10 +25,13 @@ function ShowFeeds($nick, $url, $burl, $images) {
 
         if($rs = $rss->get($url)) {
                 foreach($rs['items'] as $item) {
-			echo("<a href=\"$burl\" title=\"$nick's Blog\"><b>$nick</b></a> <a href=\"$url\" title=\"$nick's Feed\"><img src=\"$images/btn_rss.gif\"></a> on <b>$item[pubDate]</b> say:\n");
+			echo("<div class=\"entry\">
+			<b>$item[pubDate]</b>
+			<br />
+			<a href=\"$burl\" title=\"$nick's Blog\"><b>$nick</b></a> <a href=\"$url\" title=\"$nick's Feed\"><img src=\"$images/btn_rss.gif\"></a> said ...</div>\n");
                         echo("<br /><br />\n");
-                        echo("<li><a href=\"$item[link]\" title=\"$item[title]\">$item[title]</a></li>\n");
-                        echo("<br />\n");
+			echo("<span class=\"item\"><a href=\"$item[link]\" title=\"$item[title]\">$item[title]</a></span>\n");
+			echo("<br /><br />\n");
 			if ($item['content:encoded'] == "") {
                         	echo("$item[description]\n");
 			} else {
@@ -50,9 +53,9 @@ function ShowFeeds($nick, $url, $burl, $images) {
 #
 # This function show the "faces".
 #
-function ShowFaces($nick, $pic, $burl, $faces) {
+function ShowFaces($nick, $pic, $burl, $faces, $anonymous) {
         if ($pic == "") {
-                echo("<a name=\"$nick\" href=\"$burl\" title=\"$nick's Blog\"><img src=\"$faces/anonymous.png\" alt=\"$nick\"></a>\n");
+                echo("<a name=\"$nick\" href=\"$burl\" title=\"$nick's Blog\"><img src=\"$anonymous\" alt=\"$nick\"></a>\n");
                 echo("<br />");
                 echo("<a href=\"$burl\" title=\"$nick's Blog\">$nick</a>");
         } else {
@@ -92,12 +95,12 @@ function LastEntry($nick, $url, $burl) {
 #
 # gXPlanet Header Function
 #
-function Head($styledir) {
+function Head($styledir, $logo) {
 	echo("<div class=\"logo\">");
-	echo("<a href=\"" . SITE . "\" title=\"" . TITLE . "\"><img src=\"$styledir/logo.png\" alt=\"" . TITLE . "\" title=\"" . TITLE . "\"></a>\n");
+	echo("<a href=\"" . SITE . "\" title=\"" . TITLE . "\"><img src=\"$logo\" alt=\"" . TITLE . "\" title=\"" . TITLE . "\"></a>\n");
 	echo("</div>");
 	echo("<div class=\"slogan\">");
-	echo("<h2>" . SLOGAN . "</h2>");
+	echo(SLOGAN);
 	echo("</div>");
 }
 

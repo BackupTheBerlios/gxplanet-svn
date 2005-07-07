@@ -1,40 +1,45 @@
-/* Default gXPlanet CSS File, made by neb at gigax dot org */
+/* Retro Style. Made by neb at gigax dot org */
 
 body {
 	font-family: Arial, Lucida Grande, sans-serif;
 	margin: 0px;
 	color: black;
-	background-color: #d0d0d0;
+	background-color: #ffffff;
 }
 
 a img {
 	border: none;
 }
 
+h2 {
+	border: 1px solid #9b9797;
+	background-color: #bababa;
+	padding: 1%;
+}
+
 .header {
-	border-bottom: 5px solid #81bbf2;
-	background-color: #ffffff;
-	float: left;
-	height: 110px;
+	float: center;
+	height: 160px;
+        margin: 0.5cm;
 	overflow: visible;
-	width: 100%;
+	width: 90%;
 	text-align: left;
 	padding: 0%;
 }
 
 .logo {
-	float: left;
+        float: left;
 	clear: both;
 }
 
 .slogan {
-	width: 60%;
-	text-align: center;
+	width: 50%;
+        text-align: center;
 }
 
 .menu {
 	border: 1px solid #9b9797;
-	background-color: #81bbf2;
+	background-color: #bababa;
 	padding: 10px;
 	display: block;
 }
@@ -43,8 +48,9 @@ a img {
 	color: black;
 	text-decoration: none;
 }
+
 .menu span:hover {
-	background: #81bbf2;
+	background: #bababa;
 }
 
 .menu span {
@@ -53,15 +59,26 @@ a img {
 	margin: 0 2px;
 	padding: 2px 5px;
 	border: 1px solid #9C9C9C;
-	border-top: none;
 	white-space: nowrap;
-        background: white;
+	background: white;
 	font-weight: bold;
+}
+
+.suscriptors {
+        float: right;
+	clear: both;
+        margin: 0.5cm;
+        width: 19%;
+        text-align: left;
+        padding: 1%;
+        font-size: smaller;
+	background: #e1e1e1;
+	border: 1px solid #9b9797;
 }
 
 .suscriptors a {
 	color: #180ea2;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .suscriptors a:hover {
@@ -72,37 +89,21 @@ a img {
 	color: #5a3696;
 }
 
-.suscriptors {
-	background-color: #ffffff;
-        float: right;
-        margin: 0.0cm;
-	border-bottom: 5px solid #81bbf2;
-        width: 19%;
-        text-align: left;
-        padding: 1%;
-        /*clear: right;*/
-        font-size: smaller;
-}
-
 .lastentry {
         font-size: 10px;
 	font-weight: bold;
 }
 
 .note {
-	border: 2px solid #fa8d08; 
-	background-color: #ffa434; 
-	padding: 3%;
-}
-
-td {
-	margin: 0.5cm;
+	border: 1px solid #9b9797;
+	background-color: #e1e1e1;
 	padding: 3%;
 }
 
 .content-box {
+        margin: 0.5cm;
 	float: left;
-	width: 78%;
+	width: 70%;
 	padding: 0%;
 	padding-top: 2%;
 }
@@ -121,6 +122,11 @@ td {
 	color: #5a3696;
 }
 
+td {
+        margin: 0.5cm;
+	padding: 3%;
+}
+
 .content {
 	font-weight: normal;
 	font-size: 12px;
@@ -136,6 +142,7 @@ td {
 .face {
 	text-align: center;
 	vertical-align: top;
+        margin: 0.5cm;
 }
 
 .face a {
@@ -152,22 +159,24 @@ td {
 }
 
 .post {
-	background-color: #ffffff;
-	border-top: 5px solid #17c805;
-	border-bottom: 5px solid #17c805;
+	margin: 2px;
+	background: #e1e1e1;
+	border: 1px solid #9b9797;
 }
 
 .entry {
+	border: 1px solid #9b9797;
+	background-color: #bababa;
 }
 
 .entry a {
 	font-weight: bold;
-}       
+}
 
 .entry a:hover {
 	text-decoration: none;
-}       
-		        
+}
+
 .entry a:visited {
 	color: #180ea2;
 	text-decoration: none;
@@ -175,7 +184,7 @@ td {
 
 .post span {
 	border: 1px solid #9b9797;
-	background-color: #ffffff;
+	background-color: #bababa;
 	padding: 3px;
 	font-weight: bold;
 	text-decoration: none;
@@ -195,17 +204,14 @@ td {
 	color: black;
 	text-decoration: none;
 }
-										
+
 .footer {
+	border: 1px solid #9b9797;
+	background-color: #bababa;
 	text-align: center;
-	width: 100%;
 	float: center;
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 10px;
-	background-color: #ffffff;
-	border-top: 1px solid #81bbf2;
-	border-bottom: 1px solid #81bbf2;
-	margin: 0.6em 0em 1em 0em;
-	padding: 0.4em 0em 1.2em 0em;
+	padding: 1%;
 	clear: both;
 }

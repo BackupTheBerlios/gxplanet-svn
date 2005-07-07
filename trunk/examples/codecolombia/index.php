@@ -26,12 +26,12 @@ include_once("include/people.php");
 	?>
 </div>
 <div class="menu">
-        <?php
-	echo("<span class=\"home\"><a href=\"" . SITE . "/\">Home</a></span> <span class=\"suscription\"><a href=\"" . SITE . "/suscribe/\">Suscription</a></span>");
-	?>
+	<?php
+		echo("<span class=\"home\"><a href=\"" . SITE . "/\">Home</a></span> <span class=\"suscription\"><a href=\"" . SITE . "/suscribe/\">Suscription</a></span>");
+	?>	
 </div>
 <div class="suscriptors">
-	<h2>Suscriptors:</h2>
+	<h2>People:</h2>
 	<?php
 
 	#
@@ -62,8 +62,8 @@ include_once("include/people.php");
 		
 		?>
 		<div class="note">
-			<b>GiGAX Planet</b> it's a feeds agregator made in PHP, simple, easy to use and configure.
-			<b>GiGAX Planet</b> uses a modified version of the <a href="http://lastrss.webdot.cz/">lastRSS</a> class by <b>Vojtech Semecky</b> to work with the RSS feeds and the <a href="http://www.2rss.com">2RSS.com</a> service to convert Atom feeds to RSS, thank you guys :).
+			<h2>Code: Colombia</h2>
+		<a href="<?php echo(SITE); ?>" title="<?php echo(TITLE); ?>">Code: Colombia</a> its a <i>feeds</i> community of many developers and people envolved in the <i>Open Source</i> issue here in our country, <b>Colombia</b>. We want to see what's happening here! :). If you are interested try to suscribe your blog <?php echo("<a href=\"" . SITE . "/suscribe/\">here</a>"); ?>.
 		</div>
 		<br />
 		<br />

@@ -20,7 +20,7 @@ include_once("lastRSS.php");
 #
 define("TITLE", "GiGAX Planet - Look What The People Think!");
 define("SLOGAN", "");
-define("SITE", "http://gxplanet.berlios.de");
+define("SITE", "http://gxplanet.delictum.us/trunk");
 define("ADMIN", "neb");
 define("ADMINMAIL", "neb@gigax.org");
 
@@ -28,6 +28,18 @@ define("ADMINMAIL", "neb@gigax.org");
 # gXPlanet StyleSheet
 #
 define("STYLE", "default");
+
+#
+# gXPlanet Logo
+#
+define("LOGO", "default.png");
+
+#
+# gXPlanet Anonymous Face
+#
+# The default directory for the anonymous face its faces/
+#
+define("ANONYMOUS", "anonymous.png");
 
 #
 # gXPlanet lastRSS Setup
@@ -49,13 +61,13 @@ $rss->items_limit = 1;
 $rss->CDATA = "strip";
 
 # Encoding
-$rss->cp = "ISO-8859-1";
+#$rss->cp = "ISO-8859-1";
 
 # Strip HTML Tags
 #$rss->stripHTML = False;
 
 # Date Format
-$rss->date_format = "F j, Y";
+$rss->date_format = "F j, Y, g:i A";
 
 # Translate &something;
 $rss->translate = True;

@@ -33,6 +33,54 @@ a img {
         text-align: center;
 }
 
+.menu {
+	border-style: solid;
+	border-width: thin;
+	border-color: #1c6789;
+	background-color: #ffc;
+	padding: 3%;
+	float: center;
+	clear: both;
+	width: 90%;
+        margin: 0.5cm;
+}
+
+.menu a, a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.menu span:hover {
+	/*background: #bababa;*/
+}
+
+.menu span {
+	float: right;
+	display: block;
+	margin: 0 2px;
+	padding: 2px 5px;
+	border-style: solid;
+	border-width: thin;
+	border-color: #1c6789;
+	border-bottom: none;
+	white-space: nowrap;
+	background: white;
+	font-weight: bold;
+}
+
+.suscriptors a {
+	color: #180ea2;
+	text-decoration: underline;
+}
+
+.suscriptors a:hover {
+	color: #180ea2;
+}
+
+.suscriptors a:visited {
+	color: #5a3696;
+}
+
 .suscriptors {
 	background-color: #ffc;
         float: right;
@@ -59,6 +107,7 @@ a img {
 	background-color: #ffc;
 	padding: 3%;
 }
+
 .content-box {
 	border-style: double;
 	border-color: #1c6789;
@@ -67,6 +116,11 @@ a img {
 	width: 70%;
 	padding: 0%;
 	padding-top: 2%;
+}
+
+td {
+	margin: 0.5cm;
+	padding: 3%;
 }
 
 .content a {
@@ -123,6 +177,50 @@ a img {
 	border-style: double;
 	border-color: #1c6789;
 	margin: 2px;
+}
+
+.entry {
+	border-style: solid;
+	border-width: thin;
+	border-color: #1c6789;
+	background-color: #ffc;
+	padding: 1%;
+}
+
+.entry a {
+	font-weight: bold;
+}       
+
+.entry a:hover {
+	text-decoration: none;
+}       
+		        
+.entry a:visited {
+	color: #180ea2;
+	text-decoration: none;
+}
+
+.post span {
+	border-style: solid;
+	border-width: thin;
+	border-color: #1c6789;
+	background-color: #ffc;
+	padding: 3px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.item a {
+	text-decoration: none;
+}
+
+.item a:hover {
+	text-decoration: none;
+}
+
+.item a:visited {
+	color: #180ea2;
+	text-decoration: none;
 }
 
 .footer {

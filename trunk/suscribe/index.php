@@ -24,6 +24,11 @@ include_once("../include/shared.php");
 
         ?>
 </div>
+<div class="menu">
+        <?php
+		echo("<span class=\"home\"><a href=\"" . SITE . "/\">Home</a></span> <span class=\"suscription\"><a href=\"" . SITE . "/suscribe/\">Suscription</a></span>");
+	?>
+</div>
 <div class="content-box">
         <div class="content">
                 <?php

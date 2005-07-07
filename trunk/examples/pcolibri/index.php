@@ -21,13 +21,20 @@ include_once("include/people.php");
 	#
 	# gXPlanet Header
 	#
-	Head($styledir);
+	Head($styledir, $logo);
 
+	?>
+</div>
+<div class="menu">
+        <?php
+		echo("<span class=\"home\"><a href=\"" . SITE . "/\">Home</a></span> <span class=\"suscription\"><a href=\"" . SITE . "/suscribe/\">Suscription</a></span>");
 	?>
 </div>
 <div class="suscriptors">
 	<h2>Planeta Colibri:</h2>
-	<a href="<?php echo(SITE); ?>" title="<?php echo(TITLE); ?>">Planeta Colibri</a> its a community of <i>feeds</i> of many developers and people envolved in the <i>Open Source</i> isue here in our country, <b>Colombia</b>. The <a href="<?php echo(SITE); ?>" title="<?php echo(TITLE); ?>">Planeta Colibri</a> logo its a modification of the orginal <a href="http://bachue.com/colibri/">Colibri</a> logo, made by <i>Javier Moreno</i>.
+	<a href="<?php echo(SITE); ?>" title="<?php echo(TITLE); ?>">Planeta Colibri</a> its a <i>feeds</i> community of many developers and people envolved in
+the <i>Open Source</i> issue here in our country, <b>Colombia</b>. The <a href="
+<?php echo(SITE); ?>" title="<?php echo(TITLE); ?>">Planeta Colibri</a> logo its a modification of the orginal <a href="http://bachue.com/colibri/">Colibri</a> logo, made by <i>Javier Moreno</i>.
 	<h2>People:</h2>
 	<?php
 
@@ -77,7 +84,7 @@ include_once("include/people.php");
 			$burl = $blog[$nick];
 			echo("<tr>\n");
 			echo("<td class=\"face\">\n");
-			ShowFaces($nick, $pic, $burl, $faces);
+			ShowFaces($nick, $pic, $burl, $faces, $anonymous);
 			echo("</td>\n");
 			echo("<td class=\"post\">\n");
 			ShowFeeds($nick, $url, $burl, $images);

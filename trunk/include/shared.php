@@ -26,6 +26,16 @@ $images = SITE . "/images";
 $faces = SITE . "/faces";
 
 #
+# Default logo
+#
+$logo = SITE . "/images/" . LOGO;
+
+#
+# Anonymous face
+#
+$anonymous = SITE . "/faces/" . ANONYMOUS;
+
+#
 # Style file
 #
 $css = SITE . "/styles/" . STYLE . "/" . STYLE . ".css";
