@@ -20,7 +20,7 @@ include_once("lastRSS.php");
 #
 define("TITLE", "GiGAX Planet - Look What The People Think!");
 define("SLOGAN", "");
-define("SITE", "http://gxplanet.delictum.us/trunk");
+define("SITE", "http://gxplanet.berlios.de");
 define("ADMIN", "neb");
 define("ADMINMAIL", "neb@gigax.org");
 
