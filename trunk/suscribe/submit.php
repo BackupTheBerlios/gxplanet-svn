@@ -18,9 +18,9 @@ include_once("../include/shared.php");
 <?php
 
 	#
-# gXPlanet Header
-#
-Head($styledir);
+	# gXPlanet Header
+	#
+	Head($styledir, $logo);
 
 ?>
 </div>
