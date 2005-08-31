@@ -81,6 +81,7 @@ function ShowPeople($nick, $url, $burl, $images) {
 			echo("<br />");
 			echo("<span class=\"lastentry\"><a href=\"$item[link]\" title=\"$nick's Last Post: $item[title]\">$item[title]</a></span>\n");
 		}
+	}
 	echo("<br />");
 }
 
