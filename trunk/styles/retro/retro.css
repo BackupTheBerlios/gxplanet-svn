@@ -20,7 +20,7 @@ h2 {
 .header {
 	float: center;
 	height: 160px;
-        margin: 0.5cm;
+   margin: 0.5cm;
 	overflow: visible;
 	width: 90%;
 	text-align: left;
@@ -34,7 +34,7 @@ h2 {
 
 .slogan {
 	width: 50%;
-        text-align: center;
+   text-align: center;
 }
 
 .menu {
@@ -65,13 +65,13 @@ h2 {
 }
 
 .suscriptors {
-        float: right;
+   float: right;
 	clear: both;
-        margin: 0.5cm;
-        width: 19%;
-        text-align: left;
-        padding: 1%;
-        font-size: smaller;
+   margin: 0.5cm;
+   width: 19%;
+   text-align: left;
+   padding: 1%;
+   font-size: smaller;
 	background: #e1e1e1;
 	border: 1px solid #9b9797;
 }
@@ -90,7 +90,7 @@ h2 {
 }
 
 .lastentry {
-        font-size: 10px;
+   font-size: 10px;
 	font-weight: bold;
 }
 
@@ -101,7 +101,7 @@ h2 {
 }
 
 .content-box {
-        margin: 0.5cm;
+   margin: 0.5cm;
 	float: left;
 	width: 70%;
 	padding: 0%;
@@ -123,7 +123,7 @@ h2 {
 }
 
 td {
-        margin: 0.5cm;
+   margin: 0.5cm;
 	padding: 3%;
 }
 
@@ -142,7 +142,7 @@ td {
 .face {
 	text-align: center;
 	vertical-align: top;
-        margin: 0.5cm;
+   margin: 0.5cm;
 }
 
 .face a {

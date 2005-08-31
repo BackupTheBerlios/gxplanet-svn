@@ -55,7 +55,7 @@ a img {
 	border: 1px solid #9C9C9C;
 	border-top: none;
 	white-space: nowrap;
-        background: white;
+   background: white;
 	font-weight: bold;
 }
 
@@ -74,18 +74,18 @@ a img {
 
 .suscriptors {
 	background-color: #ffffff;
-        float: right;
-        margin: 0.0cm;
+   float: right;
+   margin: 0.0cm;
 	border-bottom: 5px solid #81bbf2;
-        width: 19%;
-        text-align: left;
-        padding: 1%;
-        /*clear: right;*/
-        font-size: smaller;
+   width: 19%;
+   text-align: left;
+   padding: 1%;
+   /*clear: right;*/
+   font-size: smaller;
 }
 
 .lastentry {
-        font-size: 10px;
+   font-size: 10px;
 	font-weight: bold;
 }
 
